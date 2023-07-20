@@ -17,6 +17,16 @@ $ npm i --save-dev @types/js-yaml
 
 ## Publish
 
+> `package.json`
+
+```json
+// AFTER
+  "name": "jnj-lib-doc",
+
+// BEFORE
+  "name": "jnj-lib-doc",
+```
+
 ```sh
 # github commit & push(VSCode)
 

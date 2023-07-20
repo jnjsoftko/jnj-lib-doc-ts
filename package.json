@@ -1,5 +1,5 @@
 {
-  "name": "jnj-lib-doc-ts",
+  "name": "jnj-lib-doc",
   "version": "0.0.2",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
