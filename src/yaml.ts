@@ -15,7 +15,7 @@ import { loadFile, saveFile } from "jnj-lib-base";
  * @param path - string, './filename.ext'
  *
  */
-export const loadYaml = (path: string) => {
+const loadYaml = (path: string) => {
   return yaml.load(loadFile(path));
 };
 
@@ -25,7 +25,7 @@ export const loadYaml = (path: string) => {
  * @param path - string, './filename.ext'
  *
  */
-export const dumpYaml = (data: any) => {
+const dumpYaml = (data: any) => {
   return yaml
     .dump(data, {
       schema: yaml.JSON_SCHEMA,
@@ -44,10 +44,11 @@ export const dumpYaml = (data: any) => {
  * @param data
  *
  */
-export const saveYaml = (path: string, data: any) => {
+const saveYaml = (path: string, data: any) => {
   saveFile(path, dumpYaml(data));
 };
 
+export { loadYaml, dumpYaml, saveYaml };
 // // & TEST
 // console.log(loadYaml('C:/JnJ-soft/Developments/_Settings/_temp/_config/database/database_conn.yaml'));
 // console.log(dumpYaml({'a': 1, 'b': {'c': [1,2,3], 'd': {'x': 5, 'y': 6}}}));

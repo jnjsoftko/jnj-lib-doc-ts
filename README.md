@@ -24,7 +24,7 @@ $ npm i --save-dev @types/js-yaml
   "name": "jnj-lib-doc",
 
 // BEFORE
-  "name": "jnj-lib-doc",
+  "name": "jnj-lib-doc-ts",
 ```
 
 ```sh

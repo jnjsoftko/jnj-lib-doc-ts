@@ -14,7 +14,7 @@ import { loadFile, saveFile } from "jnj-lib-base";
  * @param path - string, './filename.ext'
  *
  */
-export const loadCsv = (path: string) => {
+const loadCsv = (path: string) => {
   return parse(loadFile(path), { columns: true });
 };
 
@@ -25,13 +25,14 @@ export const loadCsv = (path: string) => {
  * @param data
  *
  */
-export const saveCsv = (path: string, data: any) => {
+const saveCsv = (path: string, data: any) => {
   stringify(data, (err, output) => {
     if (err) throw err;
     saveFile(path, output);
   });
 };
 
+export { loadCsv, saveCsv };
 // // & TEST
 // // * LOAD
 // console.log("loadCsv", loadCsv("../data/userLevel.csv"));
