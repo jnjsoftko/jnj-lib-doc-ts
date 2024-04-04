@@ -34,7 +34,7 @@ const dumpYaml = (data: any) => {
       sortKeys: true,
       lineWidth: Infinity,
     })
-    .trimRight();
+    .trimEnd();
 };
 
 /**
